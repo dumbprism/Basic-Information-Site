@@ -4,10 +4,16 @@ const fs = require('fs')
 
 http.createServer((req,res) => {
     const q = url.parse(req.url,true)
-    const filename = '.' + q.pathname
+    let filename = '.' + q.pathname
+
+        if(filename === './'){
+            filename = './index.html'
+        }
     
 
     fs.readFile(filename,(err,data) => {
+
+      
 
        if(err){
 
@@ -26,7 +32,8 @@ http.createServer((req,res) => {
 
         })
 
-       } 
+       }
+       
        else{
         res.writeHead(200,{'Content-Type': 'text/html'});
         res.write(data)
