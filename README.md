@@ -5,3 +5,7 @@ The `express.js` file consits express.js approach on creating and using a server
 
 With this I conclude it is much easier to build apps using express since you have to write very minimal code and also it is quite easy compared to node. Yet it is essential to learn node.js to build basics and go ahead with express. 
 
+
+Update : I have added routers to this now, the code looks clean and quite professional as well
+
+Routers are pretty cool, I just discovered them 😁
